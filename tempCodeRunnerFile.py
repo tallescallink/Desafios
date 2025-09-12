@@ -1,4 +1,11 @@
-a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-menores_ou_iguais_a_5 = [num for num in a 
-                        if num <=5 ] #then
-print('Números menores ou iguais a 5:', *menores_ou_iguais_a_5, sep=', ')
+import random, secrets
+
+def user_list(x, y):
+    lista = [secrets.randint(x,y) for i in range(5)]
+    print('Lista completa:', lista)
+
+    nova_lista = [lista[0], lista [-1]]
+    return nova_lista
+
+print('Primeeiro e último número da lista são:', user_list(1, 50))
+
