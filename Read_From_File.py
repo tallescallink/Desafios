@@ -1,3 +1,31 @@
+# VERSÃO ATUALIZADA PARA LER O CONTO, OU SEJA LER LETRAS E NÚMEROS COMO PALAVRAS (DESCONSIDERA PONTUAÇÃO)
+import re
+from collections import Counter
+
+with open('Dracula.txt', 'r', encoding='utf-8') as file:
+    text = file.read().split()
+    #words = re.findall(r'\w+', text, flags=re.UNICODE)
+    words =[]
+    #count = Counter(words)
+    for i in text:
+        words.append(i)
+print(Counter(words))
+
+
+
+
+# 1ª VERSÃO
+# from collections import Counter
+# with open('Dracula.txt', 'r', encoding='utf-8') as file:
+#     content = file.read().split()
+#     list_count = Counter(content)
+#     for word, mount in list_count.items():
+# #print(f'{word}: {mount}')  # Opicional
+#         print('--- File Content ---')
+# print(content)
+
+
+# DEEPSEEK
 from collections import Counter
 import re
 from rich.console import Console

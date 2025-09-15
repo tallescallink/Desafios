@@ -1,0 +1,30 @@
+As Noivas do Conde
+
+Quando a névoa descia, o castelo parecia tossir as últimas luzes da aldeia. Telhas, ameias e uma torre que cortava o céu: era ali, entre sombras de pedra, que o Conde se movia como quem retorna a um antigo hábito. Não andava; deslizava por memórias que chimpavam nas paredes frias.
+
+As três vinham como um sopro que conversa com a noite — passos inaudíveis, vestidos que não seguiam a gravidade humana. Eram belas de um modo que assustava: olhos profundos como lagoas e bocas com promessa de silêncio eterno. Chegaram sem ruído à sala principal, onde o Conde já as esperava de costas para a janela. A lua recortava sua silhueta como um fragmento de silêncio.
+
+"Trouxe alguém?" perguntou uma delas, a voz arrastada por séculos.
+
+"Pouco importa", respondeu ele. Sua voz era um eixo antigo, firme e cansado. "A noite os alimenta. A noite nos lembra o que fomos."
+
+Elas riram — um som de vento em janelas partidas — e envolveram-se numa dança que mais parecia a lembrança de uma dança: braços longos, cabeças que se inclinavam como se escutassem um nome guardado. Não havia calor entre eles; havia costume, e algo que poderia ser confundido com ternura. O Conde olhava, e por instantes a máscara do predador cedia a um traço humano: um desejo de companhia que não se apaga com séculos.
+
+Na escuridão do corredor um camponês se perdeu. Seu alento ficou preso nas pedras, e a casa ouviu o rumor do medo. As noivas aproximaram-se — não com fome, mas com uma precisão de quem conhece a anatomia do mundo há demasiado tempo. O serviço foi breve, limpo, como apagar uma vela. Quando tudo estiver calmo, disse uma delas, "ele sempre volta à janela."
+
+Voltou. Ficou à janela enquanto o primeiro fio pálido do amanhecer escorria no horizonte. Observava a manhã como se ela fosse uma promessa perdida. As noivas sentaram-se à lareira e mexeram brasas que não queimavam. Falavam de tempos antigos — nomes de cidades, de navios, de noites em que a peste ainda dançava.
+
+"Queres partir?" perguntou uma delas de repente, com uma ansiedade que soava quase humana.
+
+O Conde voltou o rosto. Um sorriso, se era sorriso, não aquecia. "Partir para onde? Para morrer? Não sei o que existe fora do meu lugar."
+
+Houve entre elas um silêncio longo, como o intervalo entre batidas de um relógio que deixou de funcionar. Não houve piedade, nem ódio. Havia reconhecimento: todos presos a um destino que não perguntara o consentimento de ninguém.
+
+Quando o sol subiu alto o suficiente para demarcar o fim da noite, as três retiraram-se, juntando-se ao Conde numa fila de vultos que se dissolvia na névoa. O castelo voltou a fechar seus portões, e o mundo dos vivos seguiu seu curso sem saber o que passara ali.
+
+O que restou na torre foi uma cadeira vazia diante da janela e o eco de vozes que lembravam, de vez em quando, que a imortalidade também é prisão — e que até o predador mais antigo pode carregar, entre as presas, um peso chamado saudade."""
+
+words = re.findall(r'\w+', text, flags=re.UNICODE)
+
+count = Counter(words)
+
