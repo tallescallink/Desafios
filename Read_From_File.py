@@ -25,7 +25,6 @@ print(Counter(words))
 # print(content)
 
 
-# DEEPSEEK
 from collections import Counter
 import re
 from rich.console import Console
