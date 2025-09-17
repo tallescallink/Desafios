@@ -4,7 +4,6 @@ from rich.console import Console
 from rich.table import Table
 from rich import box
 import matplotlib.pyplot as plt
-import numpy as np
 
 console = Console()
 
@@ -40,7 +39,7 @@ def analise_profunda_texto():
             console.print(tabela)
             
             # Estatísticas gerais
-            console.print(f"\n[bold yellow]📈 ESTATÍSTICAS GERAIS:[/bold yellow]")
+            console.print("\n[bold yellow]📈 ESTATÍSTICAS GERAIS:[/bold yellow]")
             console.print(f"• Total de palavras: [green]{total_palavras}[/green]")
             console.print(f"• Palavras únicas: [blue]{len(contador)}[/blue]")
             console.print(f"• Palavra mais comum: [red]'{contador.most_common(1)[0][0]}'[/red]")

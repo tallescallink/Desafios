@@ -1,4 +1,4 @@
-import random, secrets
+import secrets
 
 def user_list(x, y):
     lista = [secrets.randbelow(y - x + 1) + x for i in range(5)]
