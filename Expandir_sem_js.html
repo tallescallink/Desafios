@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-6 bg-gray-100">
+
+  <!-- bloco principal -->
+  <details class="group w-full max-w-sm mx-auto bg-white rounded-xl shadow p-4">
+    <summary class="cursor-pointer flex items-center gap-2 text-blue-600 font-semibold">
+      <span class="text-xl group-open:hidden">+</span>
+      <span class="text-xl hidden group-open:inline-block">&times;</span>
+      Mostrar tabela
+    </summary>
+
+    <div class="overflow-x-auto mt-3">
+      <table class="table-auto w-full text-sm text-left">
+        <thead class="bg-gray-200">
+          <tr>
+            <th class="px-2 py-1">Nome</th>
+            <th class="px-2 py-1">Idade</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <!-- Linha simples -->
+          <tr class="border-t">
+            <td class="px-2 py-1">Acordo 8x</td>
+            <td class="px-2 py-1">23</td>
+          </tr>
+
+          <!-- Linha com subdetalhes -->
+          <tr class="border-t">
+            <td colspan="2" class="px-2 py-1">
+              <!-- detalhe próprio do acordo 10x -->
+              <details class="group">
+                <summary class="cursor-pointer flex items-center gap-2 text-blue-600 font-semibold">
+                  <span class="text-xl group-open:hidden">+</span>
+                  <span class="text-xl hidden group-open:inline-block">&times;</span>
+                  Acordo 10x
+                </summary>
+
+                <!-- tabela interna ou lista das parcelas -->
+                <table class="table-auto w-full mt-2 text-sm text-left border">
+                  <thead class="bg-gray-100">
+                    <tr>
+                      <th class="px-2 py-1">Parcela</th>
+                      <th class="px-2 py-1">Valor</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-t">
+                      <td class="px-2 py-1">1ª parcela</td>
+                      <td class="px-2 py-1">R$100</td>
+                    </tr>
+                    <tr class="border-t">
+                      <td class="px-2 py-1">2ª parcela</td>
+                      <td class="px-2 py-1">R$100</td>
+                    </tr>
+                    <!-- …repete até 10ª parcela -->
+                  </tbody>
+                </table>
+              </details>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </details>
+
+</body>
+</html>
